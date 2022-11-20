@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sortierer</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="main">
+
+        <h1>Sortierer</h1>
+
+        <p><b>Eingabe:</b></p>
+        <input type="text" id="input">
+
+        <br>
+        <br>
+
+        <p><b>Wähle einen Sortieralgorithmus:</b></p>
+
+        <input type="radio" name="alg" id="bubble">
+        <label for="bubble">Bubblesort</label> 
+        <br>
+        <input type="radio" name="alg" id="insertion"> 
+        <label for="insertion">Insertionsort</label> 
+        <br>
+        <input type="radio" name="alg" id="selection"> 
+        <label for="selection">Selectionsort</label> 
+        <br>
+        <input type="radio" name="alg" id="quick"> 
+        <label for="quick">Quicksort</label>
+
+        <br>
+        <br>
+
+        <p><b>Wähle die Richtung:</b></p>
+
+        <input type="radio" name="dir" id="up">
+        <label for="up">Aufsteigend</label>
+        <br>
+        <input type="radio" name="dir" id="down">
+        <label for="down">Absteigend</label>
+
+        <br>
+        <br>
+        <br>
+
+        <button style="font-size: 20px;" id="btn">Sortieren</button>
+
+        <br>
+
+        <p><b>Sortiert:</b></p>
+        <div id="output"></div>
+
+        <div id="dauer"></div>
+
+    </div>
+</body>
+</html>

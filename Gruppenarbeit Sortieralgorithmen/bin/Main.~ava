@@ -1,0 +1,43 @@
+import java.util.Arrays;
+
+import SortingAlgorithms.*;
+
+class Main {
+      
+      public static void main(String[] args) {
+            //Bubblesort test
+            SortingAlgorithm alg = new Bubblesort();
+            int[] arr = {5,3,7,7,8,3,4,4,1};
+            
+            System.out.println(Arrays.toString(alg.sort(arr)));
+            
+            //Frame test
+            Frame frame = new Frame();
+            
+            //Input Handler test
+            InputHandler.setInputArray(" 22 5 4 7, 6b 56 99a 8  1 0 2    ");
+            System.out.println(Arrays.toString(InputHandler.inputArray));
+            
+            InputHandler.setSortingDirection(-1);
+            System.out.println(InputHandler.sortingDirection);
+            
+            InputHandler.setSortingAlgorithm("quicksort");
+            System.out.println(InputHandler.sortingAlgorithm);
+            
+            //sorting and flip test
+            InputHandler.sortingAlgorithm = new Bubblesort();
+            int[] output = InputHandler.sortingAlgorithm.sort(InputHandler.inputArray);//tsad
+            System.out.println(Arrays.toString(output));
+            System.out.println(Arrays.toString(SortingAlgorithm.flipArray(output)));
+            
+            System.out.println("12345678".matches("[0-9]*"));
+      }
+      
+      public static int[] getSortedArray() {
+            int[] sortedArray = InputHandler.sortingAlgorithm.sort(InputHandler.inputArray);
+            
+            if(InputHandler.sortingDirection != -1) return sortedArray;
+            return SortingAlgorithm.flipArray(sortedArray);
+      }
+      
+}
