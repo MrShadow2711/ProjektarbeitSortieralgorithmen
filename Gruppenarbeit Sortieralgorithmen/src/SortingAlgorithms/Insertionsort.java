@@ -1,7 +1,7 @@
 package SortingAlgorithms;
 
 /*
- * coded by Tarek
+ * programmed by Tarek
  */
 
 public class Insertionsort extends SortingAlgorithm {

@@ -1,7 +1,7 @@
 package SortingAlgorithms;
 
 /*
- * coded by Marlon
+ * programmed by Marlon
  */
 
 public abstract class SortingAlgorithm {
